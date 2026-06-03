@@ -1,0 +1,89 @@
+<div class="home-container">
+
+  <!-- Main Card -->
+  <div class="hero-card">
+
+    <!-- Navbar -->
+    <nav class="navbar">
+
+      <div class="logo">
+        🚌 <span>Blue Bus</span>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">How it works</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Manage Booking</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+
+    </nav>
+
+    <!-- Hero Content -->
+
+    <div class="hero-content">
+
+      <h1>Easy Booking, Easy Travel</h1>
+
+      <p>
+        30,000+ People Uses our Bus Booking System
+      </p>
+
+      <!-- Search Form -->
+
+      <form
+        [formGroup]="searchForm"
+        (ngSubmit)="searchBus()">
+
+        <div class="search-box">
+
+          <div class="field">
+
+            <span>📍</span>
+
+            <input
+              type="text"
+              placeholder="Leaving from"
+              formControlName="source">
+
+          </div>
+
+          <div class="swap">
+            ⇄
+          </div>
+
+          <div class="field">
+
+            <span>📌</span>
+
+            <input
+              type="text"
+              placeholder="Going to"
+              formControlName="destination">
+
+          </div>
+
+          <div class="field">
+
+            <span>📅</span>
+
+            <input
+              type="date"
+              formControlName="journeyDate">
+
+          </div>
+
+        </div>
+
+        <button class="search-btn">
+          Search Buses
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</div>

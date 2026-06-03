@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home-container {
+
+  min-height: 100vh;
+
+  background: #003b7a;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 30px;
+}
+
+.hero-card {
+
+  width: 95%;
+  max-width: 1300px;
+
+  height: 80vh;
+
+  border: 8px solid white;
+
+  background:
+  linear-gradient(
+      rgba(0,0,0,.35),
+      rgba(0,0,0,.35)
+    ),
+    url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee');
+
+  background-size: cover;
+  background-position: center;
+
+  position: relative;
+}
+
+.navbar {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 35px 70px;
+}
+
+.logo {
+
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+
+  list-style: none;
+  display: flex;
+  gap: 35px;
+}
+
+.nav-links a {
+
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+
+  transition: .3s;
+}
+
+.nav-links a:hover {
+
+  color: #4da3ff;
+}
+
+.hero-content {
+
+  position: absolute;
+
+  top: 55%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+
+  color: white;
+
+  width: 100%;
+}
+
+.hero-content h1 {
+
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+
+  margin-bottom: 40px;
+  font-size: 15px;
+}
+
+.search-box {
+
+  background: white;
+
+  display: flex;
+
+  width: 70%;
+
+  margin: auto;
+
+  padding: 10px;
+
+  border-radius: 15px;
+
+  align-items: center;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,.2);
+}
+
+.field {
+
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+
+  border-right: 1px solid #ddd;
+
+  padding: 0 15px;
+}
+
+.field:last-child {
+  border-right: none;
+}
+
+.field span {
+
+  margin-right: 10px;
+  color: #2f80ed;
+}
+
+.field input {
+
+  border: none;
+  outline: none;
+
+  width: 100%;
+
+  font-size: 14px;
+}
+
+.swap {
+
+  color: #2f80ed;
+
+  font-size: 20px;
+
+  margin: 0 10px;
+}
+
+.search-btn {
+
+  margin-top: 20px;
+
+  background: #2f80ed;
+
+  color: white;
+
+  border: none;
+
+  padding: 12px 30px;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  font-weight: bold;
+
+  transition: .3s;
+}
+
+.search-btn:hover {
+
+  background: #1366d6;
+}
+
+@media(max-width: 992px) {
+
+  .search-box {
+
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .field {
+
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+
+    padding: 15px;
+  }
+
+  .navbar {
+
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-links {
+
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-content h1 {
+
+    font-size: 32px;
+  }
+}
